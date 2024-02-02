@@ -33,3 +33,8 @@ $ rustup target add wasm32-wasi
 $ rustc hellorust.rs --target wasm32-wasi
 $ wasmtime hellorust.wasm
 ```
+
+```
+$ nix-shell -p wabt wastime
+$ wat2wasm hellowat.wat > hellowat.wasm
+```
