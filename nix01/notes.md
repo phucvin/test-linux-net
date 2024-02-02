@@ -25,3 +25,11 @@ $ exit
 $ ./hellorust
 Hello Rust!
 ```
+
+```
+$ nix-shell -p rustup wasmtime
+$ rustup default stable
+$ rustup target add wasm32-wasi
+$ rustc hellorust.rs --target wasm32-wasi
+$ wasmtime hellorust.wasm
+```
