@@ -1,5 +1,6 @@
 ```
 $ sh <(curl -L https://nixos.org/nix/install) --no-daemon
+$ . /home/codespace/.nix-profile/etc/profile.d/nix.sh
 $ cowsay
 bash: cowsay: command not found
 $ nix-shell -p cowsay lolcat
